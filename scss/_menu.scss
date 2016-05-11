@@ -1,0 +1,121 @@
+.menu {
+	position: relative;
+	width: 100%;
+	height: 67px;
+	background: #000;
+	opacity: .8;
+	.wr {
+		margin: 0 auto;
+		&:after {
+        content: "";
+        display: table;
+        clear: both;
+    	}
+	}
+	.button {
+		display: inline-block;
+		float: right;
+		margin: 14px 22px 0 0;
+		padding: 5px 10px 6px 8px;
+		border: 1px solid #fff;
+		border-radius: 3px;
+		font-family: "SegoeUI-Bold", sans-serif;
+		font-size: 17px;
+		line-height: 26px;
+		letter-spacing: -1px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #a1cc1b;
+		&:hover {
+			background-color: #262424;
+		}
+	}
+}
+
+@media screen and (min-width:240px) and (max-width:479px) {
+	.menu {
+		.wr {
+			width: 230px;
+			.logo {
+				position: relative;
+				top: 11px;
+				left: 14px;
+				display: block;
+				margin: 0 auto;
+			}
+			.menu-circle,
+			.menu-info,
+			.button {
+				display: none;
+			}		
+		}
+	}
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+	.menu {
+		.wr {
+			width: 480px;
+			padding: 5px;
+			.logo {
+				float: left;
+				margin-top: 8px;
+			}
+			.menu-circle,
+			.menu-info {
+				display: none;
+			}
+			.button {
+				margin: 11px 15px 0 0;
+				padding: 2px 10px 5px 8px;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:999px) {
+
+}
+
+@media screen and (min-width:1000px) {
+	.menu {
+		font-family: "SegoeUI", sans-serif;
+		.wr {
+			width: 1000px;
+			.logo {
+				position: relative;
+				float: left;
+				margin-top: 13px;
+			}
+			.menu-circle {
+				position: absolute;
+				top: -27px;
+				right: 110px;
+				width: 110px;
+				height: 110px;
+				border-radius: 60px;
+				background-color: #000;
+				z-index: -1;
+			}
+			.menu-info {
+				float: left;
+				margin-left: 135px;
+				margin-top: 15px;
+				li {
+					display: inline-block; 
+					margin-right: 25px;
+					img {
+						float: left;
+						margin-right: 10px;
+						margin-bottom: 15px;
+					}
+					span {
+						float: left;
+					}				
+				}
+
+			}
+		}
+	}
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Test</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="compiled/flipclock.css">
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="compiled/flipclock.js"></script>
+</head>
+<body>
+
+
+	<!-- MENU -->
+	<div class="menu">
+		<div class="wr">
+			<a href="#" class="logo">
+				<div class="menu-circle"></div>
+				<img src="img/logo240px.png"  alt="logo">
+			</a>
+			<ul class="menu-info">
+				<li>
+					<img src="img/leaf.png" alt="leaf">
+					<span>
+						100% <br> органика
+					</span>
+				</li>
+				<li>
+					<img src="img/basket.png" alt="basket">
+					<span>
+						3567 человек <br> заказали сегодня
+					</span>
+				</li>
+			</ul>
+			<a href="#" class="button">
+				Закажите обратный звонок
+			</a>
+		</div>
+	</div>
+
+
+	
+	<!-- CONTENT -->
+	<div class="content">
+		<div class="title">
+			<h1>
+				Простодин - двойной удар по простатиту
+			</h1>
+			<h3>
+				За 1 курс улучшит работу кровеносной системы, нормализирует процесс мочеиспускания, повысит иммунитет, силит либидо
+			</h3>
+		</div>		
+
+		<div class="applying">
+			<section>
+				<img src="img/lightning.png" alt="lightning">
+				<span>
+					Избавьтесь от боли в промежности, прямой кишке и яичках
+				</span>
+			</section>	
+
+			<section>
+				<img src="img/bladder.png" alt="lightning">
+				<span>
+					Восстановите нормальное мочеиспускание за 1 курс 
+				</span>
+			</section>	
+
+			<section>
+				<img src="img/fire.png" alt="lightning">
+				<span>
+					Снимите воспаление простаты
+				</span>
+			</section>	
+
+			<section>
+				<img src="img/man.png" alt="lightning">
+				<span>
+					Укрепите мужское сексуальное здоровье
+				</span>
+			</section>
+
+		</div>
+
+		<div class="foto">
+			<img src="img/medicine.png" alt="medicine">
+			<div class="sale">
+				<!-- <img src="img/sale.png" alt="sale"> -->
+			</div>
+		</div>
+
+		<div class="form">
+				<div class="clock" style="margin:2em;"></div>
+	<div class="message"></div>
+
+	<script type="text/javascript">
+		var clock;
+		
+		$(document).ready(function() {
+			var clock;
+
+			clock = $('.clock').FlipClock({
+		        clockFace: 'HourlyCounter',
+		        autoStart: false,
+		        callbacks: {
+		        	stop: function() {
+		        		$('.message').html('The clock has stopped!')
+		        	}
+		        }
+		    });
+				    
+		    clock.setTime(10880);
+		    clock.setCountdown(true);
+		    clock.start();
+
+		});
+	</script> 
+		</div>
+
+	</div>
+
+
+
+	<!-- FLIP CLOCK -->
+	<!--<div class="clock" style="margin:2em;"></div>
+	<div class="message"></div>
+
+	<script type="text/javascript">
+		var clock;
+		
+		$(document).ready(function() {
+			var clock;
+
+			clock = $('.clock').FlipClock({
+		        clockFace: 'HourlyCounter',
+		        autoStart: false,
+		        callbacks: {
+		        	stop: function() {
+		        		$('.message').html('The clock has stopped!')
+		        	}
+		        }
+		    });
+				    
+		    clock.setTime(10880);
+		    clock.setCountdown(true);
+		    clock.start();
+
+		});
+	</script> -->
+
+</body>
+</html>
